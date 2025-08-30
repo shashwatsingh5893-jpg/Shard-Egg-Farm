@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  <title>Sharad Egg Farm – Bulk Egg Traders</title>  
+  <style>  
+    :root{  
+      --brand:#2d572c;  
+      --brand2:#4caf50;  
+      --accent:#ffcc00;  
+      --ink:#263238;  
+      --bg:#f6f9f6;  
+    }  
+    *{box-sizing:border-box}  
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);background:var(--bg)}  
+    a{color:inherit}  
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}  
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15)}  
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}  
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700}  
+    .brand span{font-size:20px}  
+    .nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}  
+    .nav a:hover{opacity:.9}
+
+    /* HERO SECTION */
+    .hero{position:relative;min-height:58vh;display:grid;place-items:center;text-align:center;color:#fff}  
+    .hero::before{content:"";position:absolute;inset:0;background:url('file:///C:/Users/Sarad%20singh/OneDrive/Documents/SharadEggFarm/image/baground.PNG') center/cover no-repeat;}  
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.55))}  
+    .hero > *{position:relative;z-index:1}  
+    .hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px}  
+    .hero p{font-size:clamp(14px,2.2vw,18px);margin:0 0 16px}  
+    .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}  
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent}  
+    .btn.whatsapp{background:#25d366;color:#fff}  
+    .btn.call{background:#fff;color:#000;border-color:#fff}  
+    .btn:hover{transform:translateY(-1px)}  
+
+    .badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:-28px}
+    .badge{background:#fff;border-radius:16px;padding:16px;box-shadow:0 6px 16px rgba(0,0,0,.08);text-align:center;font-weight:700}
+
+    section{padding:52px 0}
+    h2{font-size:clamp(22px,3.5vw,32px);margin:0 0 14px;color:var(--brand)}
+    .muted{color:#566}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+    .card{background:#fff;border-radius:16px;box-shadow:0 6px 14px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column}
+    .card img{width:100%;height:170px;object-fit:cover}
+    .card .pad{padding:16px}
+    .card .title{font-weight:800;color:var(--brand)}
+    .card .order{margin-top:auto}
+
+    .wide-img{width:100%;border-radius:16px;display:block;box-shadow:0 8px 18px rgba(0,0,0,.08)}
+
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+    @media (max-width:900px){.contact{grid-template-columns:1fr}}
+    .cardish{background:#fff;border-radius:16px;box-shadow:0 6px 14px rgba(0,0,0,.08);padding:20px}
+    .contact .line{margin:8px 0}
+    .contact .btn{margin-top:8px}
+    iframe.map{width:100%;height:340px;border:0;border-radius:14px}
+
+    footer{background:#0f2810;color:#bde0bd}
+    footer .foot{display:flex;gap:18px;justify-content:space-between;align-items:center;padding:20px 0;flex-wrap:wrap}
+    .copy{font-size:14px}
+
+    .float-wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:28px;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,.25)}
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <div class="container nav">  
+      <div class="brand" aria-label="Sharad Egg Farm">  
+        <span>🥚</span><span>Sharad Egg Farm</span>  
+      </div>  
+      <nav>  
+        <a href="#about">About</a>  
+        <a href="#products">Products</a>  
+        <a href="#bulk">Bulk Orders</a>  
+        <a href="#contact">Contact</a>  
+      </nav>  
+    </div>  
+  </header>  
+
+  <!-- HERO SECTION -->
+  <section class="hero">  
+    <div class="container">  
+      <h1>Direct from Village Farm to Your Business</h1>  
+      <p>Fresh, hygienic bulk egg supply • On-time truck delivery • Best wholesale rates</p>  
+      <div class="cta">  
+        <a class="btn whatsapp" href="https://wa.me/919984435874" target="_blank" rel="noopener">WhatsApp Order</a>  
+        <a class="btn call" href="tel:+919984435874">Call Now</a>  
+      </div>  
+    </div>  
+  </section>  
+
+  <div class="container badges">  
+    <div class="badge">🥚 Farm Fresh</div>  
+    <div class="badge">🚛 Truck Supply</div>  
+    <div class="badge">💰 Wholesale Rates</div>  
+    <div class="badge">⏰ On-Time Delivery</div>  
+  </div>  
+
+  <section id="about">  
+    <div class="container">  
+      <h2>About Us</h2>  
+      <p class="muted">We operate from <strong>Baranpur, Jaunpur, Uttar Pradesh</strong>, supplying eggs directly from our poultry to traders, hotels and distributors across cities. Hygienic packing, careful loading, and reliable transport are our promises.</p>  
+    </div>  
+  </section>  
+
+  <section id="products">  
+    <div class="container">  
+      <h2>Bulk Products</h2>  
+      <div class="cards">  
+        <article class="card">  
+         <img src="file:///C:/Users/Sarad%20singh/OneDrive/Documents/SharadEggFarm/image/tray.PNG" />  
+          <div class="pad">  
+            <div class="title">30 Eggs Tray</div>  
+            <p class="muted">Standard wholesale packing for fast loading and counting.</p>  
+            <div class="order"><a class="btn whatsapp" href="https://wa.me/919984435874" target="_blank" rel="noopener">Order on WhatsApp</a></div>  
+          </div>  
+        </article>  
+
+        <article class="card">  
+          <img src="file:///C:/Users/Sarad%20singh/OneDrive/Documents/SharadEggFarm/image/white%20egg.PNG" alt="white eggs" />  
+          <div class="pad">  
+            <div class="title">White Eggs</div>  
+            <p class="muted">Fresh and graded – ideal for general retail and hotels.</p>  
+            <div class="order"><a class="btn whatsapp" href="https://wa.me/919984435874" target="_blank" rel="noopener">Order on WhatsApp</a></div>  
+          </div>  
+        </article>  
+
+        <article class="card">  
+          <img src="file:///C:/Users/Sarad%20singh/OneDrive/Documents/SharadEggFarm/image/brown%20egg.PNG" alt="brown eggs" />  
+          <div class="pad">  
+            <div class="title">Brown Eggs</div>  
+            <p class="muted">Premium nutrition – preferred by select buyers.</p>  
+            <div class="order"><a class="btn whatsapp" href="https://wa.me/919984435874" target="_blank" rel="noopener">Order on WhatsApp</a></div>  
+          </div>  
+        </article>  
+      </div>  
+    </div>  
+  </section>  
+
+  <section id="bulk">  
+    <div class="container">  
+      <h2>Bulk Loading & Logistics</h2>  
+      <p class="muted">Efficient truck loading, secure stacking, and route planning for minimal breakage and on-time arrival.</p>  
+      <img class="wide-img" src="file:///C:/Users/Sarad%20singh/OneDrive/Documents/SharadEggFarm/image/truck.PNG" />  
+    </div>  
+  </section>  
+
+  <section id="contact">  
+    <div class="container contact">  
+      <div class="cardish">  
+        <h2>Contact & Orders</h2>  
+        <p class="line">📞 <strong>Call:</strong> <a href="tel:+919984435874">+91 99844 35874</a></p>  
+        <p class="line">💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919984435874" target="_blank" rel="noopener">Chat Now</a></p>  
+        <p class="line">📧 <strong>Email (optional):</strong> @reenasinghreenasingh2828gmail.com</p>  
+        <p class="line">📍 <strong>Location:</strong> Baranpur, Jaunpur, Uttar Pradesh</p>  
+        <p class="line"><a class="btn whatsapp" href="https://wa.me/919984435874" target="_blank" rel="noopener">Place Bulk Order</a></p>  
+        <small class="muted">Working hours: 6:00 AM – 6:00 PM</small>  
+      </div>  
+      <div class="cardish">  
+        <h2>Find Us on Map</h2>  
+        <iframe class="map" loading="lazy" allowfullscreen  
+          src="https://maps.google.com/maps?q=Baranpur,Jaunpur,Uttar+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed">  
+        </iframe>  
+      </div>  
+    </div>  
+  </section>  
+
+  <footer>  
+    <div class="container foot">  
+      <div>🥚 Sharad Egg Farm</div>  
+      <div class="copy">© 2025 Sharad Egg Farm — All rights reserved</div>  
+    </div>  
+  </footer>  
+
+  <a class="float-wa" href="https://wa.me/919984435874" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>  
+</body>  
+</html>
